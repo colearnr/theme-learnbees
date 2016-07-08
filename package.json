@@ -1,6 +1,6 @@
 {
   "name": "colearnr-theme-learnbees",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "CoLearnr kids theme (Learnbees)",
   "main": "index.js",
   "scripts": {
