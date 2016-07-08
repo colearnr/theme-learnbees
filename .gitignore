@@ -11,4 +11,3 @@ apps/
 .vscode/
 gulp-ruby-sass-0/
 .sass-cache/
-dist/
