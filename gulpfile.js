@@ -4,6 +4,7 @@
 const gulp = require('gulp')
 const sass = require('gulp-ruby-sass')
 const cssnano = require('gulp-cssnano')
+const copy = require('gulp-copy')
 const rename = require('gulp-rename')
 const include = require('gulp-include')
 const gutil = require('gulp-util')
@@ -15,12 +16,12 @@ const flatten = require('gulp-flatten')
 
 // Define paths
 const paths = {
-  styles: ['stylesheets/*.scss', 'stylesheets/*.sass']
+  defaultStyles: ['./node_modules/colearnr-theme-default/stylesheets/includes/*.scss', 'stylesheets/includes/*.scss']
 }
 
 // CSS
-gulp.task('css', function () {
-  return sass('stylesheets/**/*.scss', {precision: 6, loadPath: [process.cwd() + 'stylesheets/includes', process.cwd() + 'vendor']})
+gulp.task('css', ['copyDefault', 'copyOverride'], function () {
+  return sass(['dist/stylesheets/tmp/**/*.scss'], {precision: 6, loadPath: [process.cwd() + 'dist/stylesheets/includes']})
     .on('error', sass.logError)
     .pipe(gulp.dest('dist/stylesheets'))
     .pipe(rename({suffix: '.min'}))
@@ -28,9 +29,24 @@ gulp.task('css', function () {
     .pipe(gulp.dest('dist/stylesheets'))
 })
 
+// copy default
+gulp.task('copyDefault', function () {
+  return gulp.src(paths.defaultStyles)
+    .pipe(copy('dist/stylesheets/tmp/includes', {prefix: 4}));
+})
+
+gulp.task('copyOverride', function () {
+  return gulp.src('stylesheets/*.scss')
+    .pipe(copy('dist/stylesheets/tmp', {prefix: 4}));
+})
+
 // Clean up
 gulp.task('clean', function () {
   return gulp.src(['dist/stylesheets', 'dist/fonts', 'dist/*.html'], {read: false})
+    .pipe(rimraf())
+})
+gulp.task('cleanup', function () {
+  return gulp.src(['dist/stylesheets/includes', 'dist/stylesheets/tmp'], {read: false})
     .pipe(rimraf())
 })
 

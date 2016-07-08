@@ -1,10 +1,10 @@
 {
   "name": "colearnr-theme-learnbees",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "CoLearnr kids theme (Learnbees)",
   "main": "index.js",
   "scripts": {
-    "prepublish": "mkdir -p dist && gulp css"
+    "prepublish": "mkdir -p dist && gulp css && gulp cleanup"
   },
   "keywords": [
     "CoLearnr",
@@ -16,11 +16,12 @@
     "url": "https://github.com/colearnr/theme-learnbees.git"
   },
   "devDependencies": {
-    "colearnr-theme-default": "^1.0.2",
+    "colearnr-theme-default": "^1.0.3",
     "connect-livereload": "^0.5.4",
     "gulp": "^3.9.0",
     "gulp-cache": "^0.4.3",
     "gulp-concat": "^2.6.0",
+    "gulp-copy": "0.0.2",
     "gulp-cssnano": "^2.1.0",
     "gulp-flatten": "0.2.0",
     "gulp-if": "^2.0.0",

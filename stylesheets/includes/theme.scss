@@ -1,0 +1,189 @@
+@import "base.scss";
+
+body, .item, li, .navbar .nav > li > a, .btn {
+  font-size: 16px;
+}
+
+body, h1, h2, h3, h4, h5, h6, blockquote, .menu_btn, #wall .item .top_meta_btn, .item_title, .nav-search, .form-control, .select2-search input, .select2-search-field input, .tagit-close .text-icon, p, .footer-box a, .carousel .item > p, .carousel-caption p, .section-box h3, .footer-box, .big-btn {
+  font-family: "learnbees", "Source Sans Pro", sans-serif;
+}
+
+.style-ebook {
+  font-family: "learnbees", "Source Sans Pro", sans-serif;
+
+  h1 {
+    font-family: "learnbees", "Source Sans Pro", sans-serif;
+  }
+}
+
+.style-post, table th, #page-title h1, #wall .item .top_meta_btn, .item .item_title, .menu_btn, .select2-search input, .topic-edit-class button, ul.tagit li.tagit-choice .tagit-close .text-icon, .page-title-small h3, .section-title-empty h3, .section-title h3, .topic-edit-class button {
+  font-family: "learnbees", "Source Sans Pro", sans-serif;
+}
+
+.btn-link:hover, a:hover {
+  text-decoration: none;
+}
+
+#wall .item {
+  border: $orange_border 2px solid;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.btn-link {
+  border: $orange_border 2px solid;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+
+  &:hover {
+    border: $orange_border 2px solid;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+  }
+}
+
+.btn {
+  border: $orange_border 2px solid;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+header, div#structure {
+  background: url(/images/header_bg.png);
+}
+
+.panel-default, #wall .item {
+  background: url(/images/content_bg.png);
+}
+
+.inplace_field, .form-control {
+  color: $black;
+}
+
+.nav-search {
+  color: $black;
+  height: 38px;
+}
+
+.buttons i {
+  font-size: 1.6em;
+  margin: 8px 0 0 8px;
+}
+
+.btn-default {
+  background-color: $btn_bg_color;
+  color: $white;
+
+  &.disabled {
+    background-color: rgb(241, 196, 15);
+  }
+}
+
+.btn-link:hover {
+  color: $orange_border;
+}
+
+.btn-danger {
+  background-color: rgb(192, 57, 43);
+  color: $white;
+}
+
+.btn-default {
+  &:hover, &:active, &.active {
+    background-color: $btn_hover_color;
+    color: $white;
+  }
+}
+
+.open .dropdown-toggle.btn-default, .options-btn .btn-default:active, .btn-default.active, .open .dropdown-toggle.btn-default {
+  background-color: $btn_hover_color;
+  color: $white;
+}
+
+.item {
+  .item_title, .lbit-order-display {
+    background-color: $btn_bg_color;
+    opacity: 0.9;
+  }
+
+  .lbit-order, .lbit-order-display {
+    font-size: 1.6em;
+  }
+}
+
+.detailed_info .item-tags {
+  min-height: 4em;
+  max-height: 4em;
+  overflow: hidden;
+}
+
+div.extraArt {
+  background: url("/images/bee.png") no-repeat scroll 99% 100%;
+  width: 100%;
+  height: 455px;
+}
+
+.form-control, .nav-search, input, .lbit-bookmark, textarea {
+  border: 2px solid $btn_hover_color;
+}
+
+.breadcrumb > .active {
+  color: $btn_hover_color;
+}
+
+#wrapper .sidebar .widget {
+  border-bottom: 1px solid $btn_hover_color;
+}
+
+#wall .item {
+  &.selectedLbit {
+    border: 4px solid $btn_hover_color;
+  }
+
+  div.lbit-decorate img {
+    display: none;
+  }
+
+  &.selectedLbit div.lbit-decorate img {
+    position: absolute;
+    top: -45px;
+    left: 0px;
+    height: 45px;
+    width: auto;
+    display: inline;
+  }
+}
+
+.owl-carousel .owl-stage-outer {
+  padding: 20px;
+}
+
+div.footer-decorate img {
+  position: absolute;
+  top: -50px;
+  left: 160px;
+  height: 100px;
+  width: auto;
+  display: inline;
+  z-index: 10;
+}
+
+.coverArt {
+  .description, .topic-description {
+    font-size: 24px;
+  }
+}
+
+#page-title h1 {
+  text-shadow: 2px 2px rgba(192, 57, 43, 0.6);
+}
+
+.coverArt {
+  .description, .topic-description {
+    text-shadow: 2px 2px rgba(192, 57, 43, 0.6);
+  }
+}
