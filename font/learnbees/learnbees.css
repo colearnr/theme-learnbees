@@ -1,0 +1,8 @@
+@font-face {
+	font-family: 'learnbees';
+	src: url('learnbees.eot');
+	src: url('learnbees.woff') format('woff'), url('learnbees.ttf') format('truetype'), url('learnbees.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+

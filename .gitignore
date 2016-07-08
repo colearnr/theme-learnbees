@@ -1,0 +1,14 @@
+.DS_Store
+.settings
+node_modules/
+.idea/
+*.log
+*.sublime-project
+*.sublime-workspace
+dump.rdb
+apps/
+.sass-cache
+.vscode/
+gulp-ruby-sass-0/
+.sass-cache/
+dist/

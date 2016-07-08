@@ -1,0 +1,41 @@
+{
+  "name": "colearnr-theme-learnbees",
+  "version": "1.0.0",
+  "description": "CoLearnr kids theme (Learnbees)",
+  "main": "index.js",
+  "scripts": {
+    "prepublish": "mkdir -p dist && gulp css"
+  },
+  "keywords": [
+    "CoLearnr",
+    "theme"
+  ],
+  "author": "Team CoLearnr <hello@colearnr.com>",
+  "license": "GPL-3.0",
+  "repository": {
+    "url": "https://github.com/colearnr/theme-learnbees.git"
+  },
+  "devDependencies": {
+    "colearnr-theme-default": "^1.0.1",
+    "connect-livereload": "^0.5.4",
+    "gulp": "^3.9.0",
+    "gulp-cache": "^0.4.3",
+    "gulp-concat": "^2.6.0",
+    "gulp-cssnano": "^2.1.0",
+    "gulp-flatten": "0.2.0",
+    "gulp-if": "^2.0.0",
+    "gulp-include": "^2.2.1",
+    "gulp-livereload": "^3.8.1",
+    "gulp-prettify": "^0.4.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-rev": "^7.0.0",
+    "gulp-rev-all": "^0.8.24",
+    "gulp-rimraf": "^0.2.0",
+    "gulp-ruby-sass": "^2.0.6",
+    "gulp-util": "^3.0.7",
+    "serve-static": "^1.10.0"
+  },
+  "engines": {
+    "node": ">=6.2.0"
+  }
+}
