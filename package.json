@@ -1,6 +1,6 @@
 {
   "name": "colearnr-theme-learnbees",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "CoLearnr kids theme (Learnbees)",
   "main": "index.js",
   "scripts": {
@@ -16,7 +16,7 @@
     "url": "https://github.com/colearnr/theme-learnbees.git"
   },
   "devDependencies": {
-    "colearnr-theme-default": "^1.0.3",
+    "colearnr-theme-default": "^1.0.5",
     "connect-livereload": "^0.5.4",
     "gulp": "^3.9.0",
     "gulp-cache": "^0.4.3",
